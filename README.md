@@ -19,7 +19,7 @@ git clone https://github.com/file-developers/web.git
 ```
 ###### Move inside the repository
 ```shell
-cd personal-web
+cd web
 ```
 ###### Install all the packages needed
 ```shell
