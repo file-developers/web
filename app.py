@@ -2,7 +2,7 @@
 # You can read more about it at https://github.com/file-developers/web
 # cc - file developers [2020]
 # Under the MIT license.
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect
 
 # create the app instance
 app = Flask(__name__)
