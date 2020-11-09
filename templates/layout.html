@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- META TAGS AND STYLE -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="The official web page for file developers">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">	
+<!-- USE JINJA TO LOAD A TITLE -->
+{% if title %}
+<title>{{ title }} · File Developers</title>
+{% else %}
+<title>File Developers</title>
+{% endif %}
+</head>
+<body>
+<!-- PRINCIPAL PAGE BLOCK -->
+{% block body %}{% endblock body %}
+</body>
+</html> 
