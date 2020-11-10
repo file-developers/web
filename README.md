@@ -3,6 +3,7 @@
 **This is the repository created to host the offitial file developers website**.
 
 The website has been created using the Python flask microframework, and it's hosted thanks to Heroku.
+### To contribute, read the CONTRIBUTING.md file
 
 ---
 
