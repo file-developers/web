@@ -1,21 +1,21 @@
 {
-  400: {
-    "number":404,
+  "400": {
+    "number":400,
     "description": "The request that this page has received is not valid. Perhaps your browser has been confused or you are using the wrong method to access this page."
   },
-  401: {
+  "401": {
     "number": 401,
     "description": "Sorry, you don't have authorization to enter this page."
   },
-  403: {
+  "403": {
     "number": 403,
     "description": "The access to the requested resource is forbidden for some reason, the server understood your request but could not respond to it."
   },
-  404: {
+  "404": {
     "number":404,
     "description": "The page you requested has not been found or it's private, maybe you did not write the link correctly."
   },
-  500: {
+  "500": {
     "number": 500,
     "description": "Don't worry, this was not your faut, we detected an interal server error."
   }
