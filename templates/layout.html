@@ -15,6 +15,15 @@
 {% endif %}
 </head>
 <body>
+<!-- Header -->
+<header id="header">       
+  <div class="inner">      
+    <a href="{{url_for('index') }}" class="logo"><b>FILE.DEVELOPERS</b></a>
+    <nav id="nav">         
+      <a href="{{ url_for('index' ) }}">Home</a>
+      <a href="{{ url_for('generic') }}">Generic</a>
+      <a href="{{ url_for('elements') }}">Elements</a>
+</header>
 <!-- PRINCIPAL PAGE BLOCK -->
 {% block body %}{% endblock body %}
 </body>
