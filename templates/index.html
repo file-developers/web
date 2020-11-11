@@ -1,23 +1,22 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h1>Main page for file developers (in development)</h1>
 <!-- Header -->
 <header id="header">
 	<div class="inner">
-		<a href="index.html" class="logo"><b>FILE.DEVELOPERS</b></a>
+    <a href="{{url_for('index') }}" class="logo"><b>FILE.DEVELOPERS</b></a>
 		<nav id="nav">
-			<a href="index.html">Home</a>
-			<a href="generic.html">Generic</a>
-			<a href="elements.html">Elements</a>
+      <a href="{{ url_for('index' ) }}">Home</a>
+      <a href="{{ url_for('generic') }}">Generic</a>
+      <a href="{{ url_for('elements') }}">Elements</a>
 		</nav>
 	</div>
 </header>
 <footer id="footer">
 	<div class="inner">
-        	<div id="copyright">
-            		<p>© 2020 File.Developers. Mit License.</p>
-          	</div>
+    <div id="copyright">
+      <p>© 2020 File.Developers. Mit License.</p>
+    </div>
 	</div>
 </footer>
 {% endblock body %}
