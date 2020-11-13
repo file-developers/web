@@ -3,10 +3,15 @@
 # cc - file developers [2020]
 # Under the MIT license.
 from flask import Flask, render_template, url_for, redirect
+import os
 import script.loads
+import script.forms as forms
 
 # create the app instance
 app = Flask(__name__)
+# get the tokens and credentials of the app and config it.
+SECRET_KEY = os.urandom(32)
+app.config['SECRET_KEY'] = SECRET_KEY
 
 # Load all the files needed.
 ERROR = script.loads.load_errors()
@@ -20,6 +25,28 @@ def index():
     Returns: The index.html template
     """
     return render_template('index.html')
+
+@app.route('/projects')
+def projects():
+    """
+    This function renders the projects.html template and then 
+    returns it to the browser.
+
+    Returns: the projects.html template
+    """
+    return render_template('projects.html', title='Projects')
+
+
+@app.route('/projects/new')
+def new_projects():
+    """
+    This function renders the new_project.html template and then 
+    returns it to the browser.
+
+    Returns: the new_project.html template
+    """
+    form = forms.NewProjectForm()
+    return render_template('new_project.html', title='New projects', form=form)
 
 @app.route('/e')
 def error():

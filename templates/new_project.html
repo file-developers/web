@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<section>
+<div>
+    <div class="data-form">
+      <form method="post" action="">
+        <div class="form-group">
+          <label for="name">{{ form.name.label() }}<label class="ast">*</label></label>
+          {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+          <label for="email">{{ form.email.label() }}<label class="ast">*</label></label>
+          {{ form.email(class="form-control") }}
+          <small id="emailHelp" class="form-text text-muted">We'll not share your e-mail</small>
+        </div>
+        <div class="form-group">
+          <label for="description">{{ form.description.label() }}<label class="ast">*</label></label>
+          {{ form.description(class="form-control") }}
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock body %}
