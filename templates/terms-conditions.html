@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Terminos y Condiciones</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of Header -->
+
+<!-- Descripcion -->
+<div class="ex-basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <a href="{{ url_for('templates', filename='index.html')}}">Inicio</a><i class="fa fa-angle-double-right"></i><span>Terminos y Condiciones</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Descripcion -->
+
+<!-- Terms Content -->
+<div class="ex-basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container">
+                    <h3>Proximamente...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Terms Content -->
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-container about">
+                    <h4>Algunas palabras sobre File Developers</h4>
+                    <p class="white">Proximamente</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="text-container">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled li-space-lg white">
+                        <li>
+                            <a class="white" href="https://github.com/file-developers">Organizacion de GitHub</a>
+                        </li>
+                        <li>
+                            <a class="white" href="{{ url_for('static', filename='terms-conditions.html')}}">Terminos y Condiciones</a>
+                        </li>
+                        <li>
+                            <a class="white" href="{{ url_for('static', filename='privacy-policy.html')}}">Politicas de Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Footer -->
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">© 2020 File.Developers. MIT License. <a href="https://inovatik.com">Template by Inovatik</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Copyright -->
+
+<!-- Scripts -->
+    <script src="{{ url_for ('static', filename='js/jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ url_for ('static', filename='js/popper.min.js')}}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{{ url_for ('static', filename=js/bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
+    <script src="{{ url_for ('static', filename=js/jquery.easing.min.js')}}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ url_for ('static', filename=js/swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{ url_for ('static', filename=js/jquery.magnific-popup.js')}}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ url_for ('static', filename=js/morphext.min.js')}}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{{ url_for ('static', filename=js/isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{ url_for ('static', filename=js/validator.min.js')}}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{{ url_for ('static', filename=js/scripts.js')}}"></script> <!-- Custom scripts -->
+<!-- End of Scripts -->
+
+{% endblock body %}
