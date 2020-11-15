@@ -11,8 +11,8 @@ import script.loads
 # create the app instance
 app = Flask(__name__)
 # get the tokens and credentials of the app and config it.
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
+# SECRET_KEY = os.urandom(32)
+# app.config['SECRET_KEY'] = SECRET_KEY
 
 # Load all the files needed.
 ERROR = script.loads.load_errors()
