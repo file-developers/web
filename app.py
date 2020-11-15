@@ -48,6 +48,26 @@ def new_projects():
     form = forms.NewProjectForm()
     return render_template('new_project.html', title='New projects', form=form)
 
+@app.route('/terms_conditions')
+def terms_conditions():
+    """
+    This function reads the terms-conditions.html template 
+    and returns it to the browser.
+
+    Returns: The terms-conditions.html template
+    """
+    return render_template('terms-conditions.html', title="Terms and Conditions")
+
+@app.route('/privacy_policy')
+def privacy_policy():
+    """
+    This function reads the privacy-policy.html template 
+    and returns it to the browser.
+
+    Returns: The privacy-policy.html template
+    """
+    return render_template('privacy-policy.html', title="Privacy Policy")
+
 @app.route('/e')
 def error():
     """
