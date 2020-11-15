@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- META TAGS AND STYLE -->
+<!-- META TAGS -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="The official web page for file developers">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">	
+<!-- SEO META TAGS -->
+<meta name="description" content="The official web page for File Developers">
+<meta name="author" content="File Developers">
+
+<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+<meta property="og:site_name" content="File Developers" /> <!-- website name -->
+<meta property="og:site" content="https://file-developers.herokuapp.com/" /> <!-- website link -->
+<meta property="og:title" content="File Developers" /> <!-- title shown in the actual shared post -->
+<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+<meta property="og:image" content="{{ url_for('static', filename='img/main.jpg')" /> <!-- image link, make sure it's jpg -->
+<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+<meta property="og:type" content="article" />
+<!-- STYLES -->
+<link href="{{ url_for('https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext') }}" rel="stylesheet">
+<link href="{{ url_for('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">	
+
 <!-- USE JINJA TO LOAD A TITLE -->
 {% if title %}
 <title>{{ title }} · File Developers</title>
 {% else %}
 <title>File Developers</title>
 {% endif %}
+
+<!-- Fav Icon -->
+<link rel="icon" href="{{ url_for('static', filename='img/main.jpg')}}">
 </head>
 <body>
 <!-- Preloader -->
@@ -41,19 +63,19 @@
   <div class="collapse navbar-collapse" id="fdnavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#header">Inicio</a>
+        <a class="nav-link page-scroll" href="{{ url_for('header')">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#intro">Descripcion</a>
+        <a class="nav-link page-scroll" href="{{ url_for('intro')">Descripcion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#services">Servicios</a>
+        <a class="nav-link page-scroll" href="{{ url_for('services')">Servicios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#callMe">Escribenos</a>
+        <a class="nav-link page-scroll" href="{{ url_for('callMe')">Escribenos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#projects">Proyectos</a>
+        <a class="nav-link page-scroll" href="{{ url_for('projects')">Proyectos</a>
       </li>
 
       <!-- Dropdown Menu -->
@@ -72,11 +94,11 @@
     </ul>
     <span class="nav-item social-icons">
       <span class="fa-stack">
-        <a href="https://github.com/file-developers">
+        <a href="{{ url_for('https://github.com/file-developers')}}">
           <span class="hexagon"></span>
           <i class="fab fa-github fa-stack-1x"></i>
         </a>
-        <a href="https://discord.gg/FeTP4PE">
+        <a href="{{ url_for('https://discord.gg/FeTP4PE')}}">
           <span class="hexagon"></span>
           <i class="fab fa-discord fa-stack-1x"></i>
         </a>
