@@ -46,7 +46,7 @@ def new_projects():
 
     Returns: the new_project.html template
     """
-    return render_template('new_project.html', title='New)
+    return render_template('new_project.html', title='New')
 
 @app.route('/terms_conditions')
 def terms_conditions():
