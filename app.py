@@ -5,7 +5,8 @@
 from flask import Flask, render_template, url_for, redirect
 import os
 import script.loads
-import script.forms as forms
+# NOT READY YET
+#import script.forms as forms
 
 # create the app instance
 app = Flask(__name__)
@@ -45,8 +46,7 @@ def new_projects():
 
     Returns: the new_project.html template
     """
-    form = forms.NewProjectForm()
-    return render_template('new_project.html', title='New projects', form=form)
+    return render_template('new_project.html', title='New)
 
 @app.route('/terms_conditions')
 def terms_conditions():
