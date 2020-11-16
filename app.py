@@ -143,4 +143,4 @@ def error500(err=None):
     """
     return render_template('error.html', e=ERROR["500"], title="500"), 500
 if __name__ == '__main__':
-    app.run(debug=True, port=5000) # IMPORTANT: Set debug=False in production
+    app.run(debug=True, port=8080) # IMPORTANT: Set debug=False in production
