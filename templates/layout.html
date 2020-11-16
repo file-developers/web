@@ -14,7 +14,7 @@
 <meta property="og:site" content="https://file-developers.herokuapp.com/" /> <!-- website link -->
 <meta property="og:title" content="File Developers" /> <!-- title shown in the actual shared post -->
 <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-<meta property="og:image" content="{{ url_for('static', filename='img/main.jpg') }}" /> <!-- image link, make sure it's jpg -->
+<meta property="og:image" content="{{ url_for('static', filename='img/File_Developers.jpg') }}" /> <!-- image link, make sure it's jpg -->
 <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 <meta property="og:type" content="article" />
 <!-- STYLES -->
@@ -34,7 +34,7 @@
 {% endif %}
 
 <!-- Icon -->
-<link rel="icon" href="{{ url_for('static', filename='img/mainwithoutbg.jpg')}}">
+<link rel="icon" href="{{ url_for('static', filename='img/fd.jpg')}}">
 </head>
 <body>
 <!-- Preloader -->
@@ -50,17 +50,17 @@
   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
   <!-- Text Logo - Use this if you don't have a graphic logo -->
-  <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">File Developers</a> -->
+  <a class="navbar-brand logo-text page-scroll" href="{{ url_for('index') }}">File Developers</a>
   
   <!-- Logo -->
-  <a class="navbar-brand logo-image" href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}" alt="File Developers"></a>
-  <!-- Mobile Menu Toggle Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fdnavbar" aria-controls="fdnavbar" aria-expanded="false" aria-label="Alternar Navegacion">
+<!--   <a class="navbar-brand logo-image" href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}" alt="File Developers"></a>-->  
+<!-- Mobile Menu Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Alternar Navegacion">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
     <span class="navbar-toggler-awesome fas fa-times"></span>
   </button>
   <!-- end of mobile menu toggle button -->
-  <div class="collapse navbar-collapse" id="fdnavbar">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link page-scroll" href="/#header">Inicio</a>
@@ -96,11 +96,11 @@
       <span class="fa-stack">
         <a href="https://github.com/file-developers">
           <span class="hexagon"></span>
-          <i class="fab fa-github fa-stack-1x"></i>
+          <i class="fab fa-facebook-f fa-stack-1x"></i>
         </a>
         <a href="https://discord.gg/FeTP4PE">
           <span class="hexagon"></span>
-          <i class="fab fa-discord fa-stack-1x"></i>
+          <i class="fab fa-twitter fa-stack-1x"></i>
         </a>
       </span>
     </span>
