@@ -112,6 +112,37 @@
 {% block body %}{% endblock body %}
 <!-- END OF PRINCIPAL PAGE BLOCK -->
 
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text-container about">
+          <h4>Algunas palabras sobre File Developers</h4>
+          <p class="white">Proximamente</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="text-container"> 
+          <h4>Links</h4> 
+          <ul class="list-unstyled li-space-lg white">
+            <li>
+              <a class="white" href="https://github.com/file-developers">Organizacion de GitHub</a>
+            </li>
+            <li>
+              <a class="white" href="{{ url_for('terms_conditions') }}">Terminos y Condiciones</a>
+            </li>
+            <li>
+              <a class="white" href="{{ url_for('privacy_policy') }}">Politicas de Privacidad</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Footer -->
+
 <!-- Scripts -->
 <div>
  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script> <!-- jQuery for Bootst    rap's JavaScript plugins -->
