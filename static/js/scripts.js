@@ -4,6 +4,7 @@
     Description: Custom JS file
 */
 
+console.log('THIS IS READY');
 
 (function($) {
     "use strict"; 
