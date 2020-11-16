@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumbs">
-                    <a href="{{ url_for('templates', filename='index.html')}}">Inicio</a><i class="fa fa-angle-double-right"></i><span>Politicas de Privacidad</span>
+                    <a href="{{ url_for('index') }}">Inicio</a><i class="fa fa-angle-double-right"></i><span>Politicas de Privacidad</span>
                 </div>
             </div>
         </div>
@@ -58,13 +58,13 @@
                     <h4>Links</h4>
                     <ul class="list-unstyled li-space-lg white">
                         <li>
-                            <a class="white" href="{{ url_for('https://github.com/file-developers')}}">Organizacion de GitHub</a>
+                            <a class="white" href="https://github.com/file-developers">Organizacion de GitHub</a>
                         </li>
                         <li>
-                            <a class="white" href="{{ url_for('static', filename='terms-conditions.html')}}">Terminos y Condiciones</a>
+                            <a class="white" href="{{ url_for('terms_conditions') }}">Terminos y Condiciones</a>
                         </li>
                         <li>
-                            <a class="white" href="{{ url_for('static', filename='privacy-policy.html')}}">Politicas de Privacidad</a>
+                            <a class="white" href="{{ url_for('privacy_policy') }}">Politicas de Privacidad</a>
                         </li>
                     </ul>
                 </div>
