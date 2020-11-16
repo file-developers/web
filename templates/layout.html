@@ -24,7 +24,7 @@
 <link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">	
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">	
 
 <!-- USE JINJA TO LOAD A TITLE -->
 {% if title %}
@@ -33,8 +33,8 @@
 <title>File Developers</title>
 {% endif %}
 
-<!-- Fav Icon -->
-<link rel="icon" href="{{ url_for('static', filename='img/main.jpg')}}">
+<!-- Icon -->
+<link rel="icon" href="{{ url_for('static', filename='img/mainwithoutbg.jpg')}}">
 </head>
 <body>
 <!-- Preloader -->
@@ -53,7 +53,7 @@
   <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">File Developers</a> -->
   
   <!-- Logo -->
-  <a class="navbar-brand logo-image" href="{{ url_for('templates', filename='index.html')}}"><img src="{{ url_for('static', filename='img/main.png') }}" alt="File Developers"></a>
+  <a class="navbar-brand logo-image" href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}" alt="File Developers"></a>
   <!-- Mobile Menu Toggle Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fdnavbar" aria-controls="fdnavbar" aria-expanded="false" aria-label="Alternar Navegacion">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -82,23 +82,23 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ url_for('templates', filename='terms-conditions.html') }}"><span class="item-text">Terminos y Condiciones</span></a>
+          <a class="dropdown-item" href="{{ url_for('terms_conditions') }}"><span class="item-text">Terminos y Condiciones</span></a>
           <div class="dropdown-items-divide-hr"></div>
-          <a class="dropdown-item" href="{{ url_for('templates', filename='privacy-policy.html') }}"><span class="item-text">Politica de Privacidad</span></a>
+          <a class="dropdown-item" href="{{ url_for('privacy_policy') }}"><span class="item-text">Politica de Privacidad</span></a>
         </div>
       </li>
       <!-- End of Dropdown Menu -->
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#contact">Contacto</a>
+        <a class="nav-link page-scroll" href="{{ url_for('contact') }}">Contacto</a>
       </li>
     </ul>
     <span class="nav-item social-icons">
       <span class="fa-stack">
-        <a href="{{ url_for('https://github.com/file-developers')}}">
+        <a href="https://github.com/file-developers">
           <span class="hexagon"></span>
           <i class="fab fa-github fa-stack-1x"></i>
         </a>
-        <a href="{{ url_for('https://discord.gg/FeTP4PE')}}">
+        <a href="https://discord.gg/FeTP4PE">
           <span class="hexagon"></span>
           <i class="fab fa-discord fa-stack-1x"></i>
         </a>

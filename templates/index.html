@@ -1,6 +1,45 @@
 {% extends "layout.html" %}
 
 {% block body %}
+<!-- Header -->
+<header id="header" class="header">
+  <div class="header-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-container">
+            <h1>File Developers: <span id="js-rotating">Desarrolladores Estudiantes Comunidad</span></h1>
+            <p class="p-heading p-large">Somos un grupo de programadores, creamos y desarrollamos proyectos juntos</p>
+            <a href="{{ url_for('intro')}}" class="btn-solid-lg page-scroll"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End of Header -->
+
+<!-- Intro -->
+<div id="intro" class="basic-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="text-container">
+          <div class="section-title">Introduccion</div>
+          <h2>Cada lenguaje es aceptado! Generalizamos en los lenguajes</h2>
+          <p>El lanzamiento de un proyecto puede ser un proceso bastante abrumador en ocasiones.</p>
+          <p class="testimonial-text">"Nuestra mision es programar juntos, compartir ideas, solicitar ayuda o conocer programadores."</p>
+          <div class="testimonial-author">ZAD4Y ~ CTO</div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="image-container">
+          <img src="" alt="Imagen" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Footer -->
 <div class="footer">
   <div class="container">
@@ -16,14 +55,14 @@
           <h4>Links</h4>
           <ul class="list-unstyled li-space-lg white">
             <li>
-              <a class="white" href="{{ url_for('https://github.com/file-developers')}}">Organizacion de GitHub</a>
+              <a class="white" href="https://github.com/file-developers">Organizacion de GitHub</a>
             </li>
             <li>
-              <a class="white" href="{{ url_for('static', filename='terms-conditions.html')}}">Terminos y Condiciones</a>
+              <a class="white" href="{{ url_for('term_conditions') }}">Terminos y Condiciones</a>
             </li>
             <li>
-              <a class="white" href="{{ url_for('static', filename='privacy-policy.html')}}">Politicas de Privacidad</a>
-            </li>
+              <a class="white" href="{{ url_for('privacy_policy') }}">Politicas de Privacidad</a>
+7            </li>
           </ul>
         </div>
       </div>
@@ -33,6 +72,7 @@
 <!-- End of Footer -->
 
 <!-- Scripts -->
+<div>
   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script> <!-- Popper tooltip library for Bootstrap --> 
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
@@ -43,5 +83,6 @@
   <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script> <!-- Isotope for filter -->
   <script src="{{ url_for('static', filename='js/validator.min.js') }}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
   <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> <!-- Custom scripts -->
+</div>
 <!-- End of Scripts -->
 {% endblock body %}
