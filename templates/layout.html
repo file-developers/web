@@ -18,8 +18,8 @@
 <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 <meta property="og:type" content="article" />
 <!-- STYLES -->
-<link href="{{ url_for('https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext') }}" rel="stylesheet">
-<link href="{{ url_for('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
@@ -53,7 +53,7 @@
   <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">File Developers</a> -->
   
   <!-- Logo -->
-  <a class="navbar-brand logo-image" href="{{ url_for('templates', filename='index.html')}}"><img src="{{ url_for('static', filename='img/main.png')" alt="File Developers"></a>
+  <a class="navbar-brand logo-image" href="{{ url_for('templates', filename='index.html')}}"><img src="{{ url_for('static', filename='img/main.png') }}" alt="File Developers"></a>
   <!-- Mobile Menu Toggle Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fdnavbar" aria-controls="fdnavbar" aria-expanded="false" aria-label="Alternar Navegacion">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -63,28 +63,28 @@
   <div class="collapse navbar-collapse" id="fdnavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="{{ url_for('header')">Inicio</a>
+        <a class="nav-link page-scroll" href="{{ url_for('header') }}">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="{{ url_for('intro')">Descripcion</a>
+        <a class="nav-link page-scroll" href="{{ url_for('intro') }}">Descripcion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="{{ url_for('services')">Servicios</a>
+        <a class="nav-link page-scroll" href="{{ url_for('services') }}">Servicios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="{{ url_for('callMe')">Escribenos</a>
+        <a class="nav-link page-scroll" href="{{ url_for('callMe') }}">Escribenos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="{{ url_for('projects')">Proyectos</a>
+        <a class="nav-link page-scroll" href="{{ url_for('projects') }}">Proyectos</a>
       </li>
 
       <!-- Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ url_for('templates', filename='terms-conditions.html')}}"><span class="item-text">Terminos y Condiciones</span></a>
+          <a class="dropdown-item" href="{{ url_for('templates', filename='terms-conditions.html') }}"><span class="item-text">Terminos y Condiciones</span></a>
           <div class="dropdown-items-divide-hr"></div>
-          <a class="dropdown-item" href="{{ url_for('templates', filename='privacy-policy.html')}}"><span class="item-text">Politica de Privacidad</span></a>
+          <a class="dropdown-item" href="{{ url_for('templates', filename='privacy-policy.html') }}"><span class="item-text">Politica de Privacidad</span></a>
         </div>
       </li>
       <!-- End of Dropdown Menu -->
