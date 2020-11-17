@@ -77,10 +77,16 @@
       <li class="nav-item">
         <a class="nav-link page-scroll" href="/#projects">Proyectos</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="https://github.com/file-developers/" target="_blank">GitHub</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="https://discord.com/invite/FeTP4PE" target="_blank">Discord</a>
+      </li>
 
       <!-- Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
+        <a class="nav-link dropdown-toggle page-scroll" href="/#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url_for('terms_conditions') }}"><span class="item-text">Terminos y Condiciones</span></a>
           <div class="dropdown-items-divide-hr"></div>
@@ -92,18 +98,6 @@
         <a class="nav-link page-scroll" href="/#contact">Contacto</a>
       </li>
     </ul>
-    <span class="nav-item social-icons">
-      <span class="fa-stack">
-        <a href="https://github.com/file-developers">
-          <span class="hexagon"></span>
-          <i class="fab fa-facebook-f fa-stack-1x"></i>
-        </a>
-        <a href="https://discord.gg/FeTP4PE">
-          <span class="hexagon"></span>
-          <i class="fab fa-twitter fa-stack-1x"></i>
-        </a>
-      </span>
-    </span>
   </div>
   </nav>
 <!-- End of Navbar -->
@@ -127,7 +121,10 @@
           <h4>Links</h4> 
           <ul class="list-unstyled li-space-lg white">
             <li>
-              <a class="white" href="https://github.com/file-developers">Organizacion de GitHub</a>
+              <a class="white" href="https://github.com/file-developers" target="_blank">Organizacion de GitHub</a>
+            </li>
+            <li>
+              <a class="white" href="https://discord.com/invite/FeTP4PE" target="_blank"></a>
             </li>
             <li>
               <a class="white" href="{{ url_for('terms_conditions') }}">Terminos y Condiciones</a>
