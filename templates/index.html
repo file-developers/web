@@ -49,8 +49,7 @@
         <!-- Card -->
         <div class="card">
           <span class="fa-stack">
-            <img src="{{ url_for('static', filename='img/book.jpg')}}" alt="" class="fas fa-binoculars fa-stack-1x">
-            <i class="fas fa-binoculars fa-stack-1x"></i>
+            <img src="{{ url_for('static', filename='img/bookimg.jpg')}}" alt="Book Image" class="fas fa-binoculars fa-stack-1x">
           </span>
           <div class="card-body">
             <h4 class="card-title">Estudio</h4>
@@ -62,7 +61,7 @@
         <!-- Card 2 -->
         <div class="card">
           <span class="fa-stack">
-            <img src="{{ url_for('static', filename='img/checkmark.jpg') }}" alt="" class="fas fa-list-alt fa-stack-1x">
+            <img src="{{ url_for('static', filename='img/checkmark.jpg') }}" alt="Check Mark Image" class="fas fa-list-alt fa-stack-1x">
           </span>
           <div class="card-body">
             <h4 class="card-title">Proyectos</h4>
@@ -74,11 +73,11 @@
         <!-- Card 3 -->
         <div class="card">
           <span class="fa-stack">
-            <img class="fas fa-chart-pie fa-stack-1x" src="{{ url_for('static', filename='img/clock.jpg') }}">
+            <img class="fas fa-chart-pie fa-stack-1x" alt="Clock Image" src="{{ url_for('static', filename='img/clock.jpg') }}">
           </span>
           <div class="card-body">
             <h4 class="card-title">Tiempo</h4>
-            <p>No te obligaremos ni restringiremos a hacer tus tareas diarias, como tu colegio, familia ni ninguna otra responsabilidad o tiempo libre.</p>
+            <p>No restringimos a hacer tus tareas diarias, como tu colegio, familia ni ninguna otra responsabilidad o tiempo libre.</p>
           </div>
         </div>
         <!-- End of Card 3 -->
@@ -88,4 +87,43 @@
   </div>
 </div>
 <!-- End of Description -->
+
+<!-- Services -->
+<div id="services" class="cards-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">Contenido</div>
+        <h2>Programas, cursos,<br>ideas, soluciones y mucho mas!</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Card -->
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='img/services-1.jpg') }}" alt="Servicio 1" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Aplicaciones</h3>
+            <p>Debatimos sobre aplicaciones o programas, recomendamos otros o compartimos experiencias.</p>
+          </div>
+          <ul class="list-unstyled li-space-lg">
+            <li class="media">
+              <i class="fas fa-square"></i>
+              <div class="media-body">Libres de expresion y opinion</div>
+            </li>
+            <li class="media">
+              <i class="fas fa-square"></i>
+              <div class="media-body">No nos especialisamos en ningun sistema operativo</div>
+            </li>
+          </ul>
+          <div class="button-container">
+            <a href="/#callMe" class="btn-solid-reg page-scroll">Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock body %}
