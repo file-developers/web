@@ -49,6 +49,7 @@
         <!-- Card -->
         <div class="card">
           <span class="fa-stack">
+            <img src="{{ url_for('static', filename='img/book.jpg')}}" alt="" class="fas fa-binoculars fa-stack-1x">
             <i class="fas fa-binoculars fa-stack-1x"></i>
           </span>
           <div class="card-body">
@@ -61,7 +62,7 @@
         <!-- Card 2 -->
         <div class="card">
           <span class="fa-stack">
-            <i class="fas fa-list-alt fa-stack-1x"></i>
+            <img src="{{ url_for('static', filename='img/checkmark.jpg') }}" alt="" class="fas fa-list-alt fa-stack-1x">
           </span>
           <div class="card-body">
             <h4 class="card-title">Proyectos</h4>
@@ -73,7 +74,7 @@
         <!-- Card 3 -->
         <div class="card">
           <span class="fa-stack">
-            <i class="fas fa-chart-pie fa-stack-1x"></i>
+            <img class="fas fa-chart-pie fa-stack-1x" src="{{ url_for('static', filename='img/clock.jpg') }}">
           </span>
           <div class="card-body">
             <h4 class="card-title">Tiempo</h4>
@@ -81,6 +82,7 @@
           </div>
         </div>
         <!-- End of Card 3 -->
+
       </div>
     </div>
   </div>
