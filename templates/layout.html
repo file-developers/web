@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- META TAGS -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- SEO META TAGS -->
-<meta name="description" content="The official web page for File Developers">
-<meta name="author" content="File Developers">
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- SEO META TAGS -->
+  <meta name="description" content="The official web page for File Developers">
+  <meta name="author" content="File Developers">
 
-<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-<meta property="og:site_name" content="File Developers" /> <!-- website name -->
-<meta property="og:site" content="https://file-developers.herokuapp.com/" /> <!-- website link -->
-<meta property="og:title" content="File Developers" /> <!-- title shown in the actual shared post -->
-<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-<meta property="og:image" content="{{ url_for('static', filename='img/File_Developers.jpg') }}" /> <!-- image link, make sure it's jpg -->
-<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-<meta property="og:type" content="article" />
-<!-- STYLES -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">	
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="File Developers" /> <!-- website name -->
+  <meta property="og:site" content="https://file-developers.herokuapp.com/" /> <!-- website link -->
+  <meta property="og:title" content="File Developers" /> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="{{ url_for('static', filename='img/File_Developers.jpg') }}" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+  <!-- STYLES -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">	
 
-<!-- USE JINJA TO LOAD A TITLE -->
-{% if title %}
-<title>{{ title }} · File Developers</title>
-{% else %}
-<title>File Developers</title>
-{% endif %}
+  <!-- USE JINJA TO LOAD A TITLE -->
+  {% if title %}
+  <title>{{ title }} · File Developers</title>
+  {% else %}
+  <title>File Developers</title>
+  {% endif %}
 
-<!-- Icon -->
-<link rel="icon" href="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}">
+  <!-- Icon -->
+  <link rel="icon" href="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}">
 </head>
 <body>
 <!-- Preloader -->
@@ -46,6 +46,7 @@
     </div>
   </div>
 <!-- end of Preloader -->
+
 <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
@@ -53,8 +54,7 @@
   <a class="navbar-brand logo-text page-scroll" href="{{ url_for('index') }}">File Developers</a>
   
   <!-- Logo -->
-<!--   <a class="navbar-brand logo-image" href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='img/mainwithoutbg.jpg') }}" alt="File Developers"></a>-->  
-<!-- Mobile Menu Toggle Button -->
+    <!-- Mobile Menu Toggle Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Alternar Navegacion">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
     <span class="navbar-toggler-awesome fas fa-times"></span>
@@ -86,12 +86,12 @@
 
       <!-- Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="/#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ url_for('terms_conditions') }}"><span class="item-text">Terminos y Condiciones</span></a>
-          <div class="dropdown-items-divide-hr"></div>
-          <a class="dropdown-item" href="{{ url_for('privacy_policy') }}"><span class="item-text">Politica de Privacidad</span></a>
-        </div>
+      <a class="nav-link dropdown-toggle page-scroll" href="/#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{{ url_for('terms_conditions') }}"><span class="item-text">Terminos y Condiciones</span></a>
+        <div class="dropdown-items-divide-hr"></div>
+        <a class="dropdown-item" href="{{ url_for('privacy_policy') }}"><span class="item-text">Politica de Privacidad</span></a>
+      </div>
       </li>
       <!-- End of Dropdown Menu -->
       <li class="nav-item">
@@ -99,11 +99,13 @@
       </li>
     </ul>
   </div>
-  </nav>
+</nav>
 <!-- End of Navbar -->
 
 <!-- Principal page block -->
+
 {% block body %}{% endblock body %}
+
 <!-- End of principal page block -->
 
 <!-- Footer -->

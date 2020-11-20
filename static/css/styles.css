@@ -857,6 +857,9 @@ input[type='checkbox'] {
 
 /* Hover Animation */
 
+#fdimage {
+	border-radius: 50%;
+}
 .basic-1 .image-container {
 	overflow: hidden;
 	border-radius: 0.25rem;
